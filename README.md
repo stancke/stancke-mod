@@ -36,7 +36,7 @@ No `~/.claude/settings.json`:
   },
   "extraKnownMarketplaces": {
     "stancke-mods": {
-      "source": { "source": "github", "repo": "<seu-usuario>/stancke-mod" }
+      "source": { "source": "github", "repo": "stancke/stancke-mod" }
     }
   }
 }
@@ -49,7 +49,7 @@ Reinicie o Claude Code.
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/<seu-usuario>/stancke-mod.git ~/.claude/mods/stancke-mod
+   git clone https://github.com/stancke/stancke-mod.git ~/.claude/mods/stancke-mod
    ```
 
 2. Adicione o marketplace local e habilite o mod no `~/.claude/settings.json`:
