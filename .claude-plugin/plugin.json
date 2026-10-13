@@ -1,0 +1,1 @@
+{ "name": "stancke-mod", "version": "0.3.2", "description": "Stancke Mod: visual do chat inspirado no OpenCode, rodapé com diretório, cores por ferramenta, frases no spinner, tema claro/escuro e faixa de limites de uso (5h/7d, contexto, custo, branch).", "types": "./types/index.d.ts" }
