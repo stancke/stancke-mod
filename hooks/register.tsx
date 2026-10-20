@@ -346,14 +346,10 @@ export const register: Register = on => {
     if (e.isInteractive && !(await read($, boot))) {
       await update($, boot, () => true)
       const ola = BOAS_VINDAS[Math.floor(Math.random() * BOAS_VINDAS.length)] ?? BOAS_VINDAS[0]
-      // uma única chamada: cada $.ui.log vira uma linha própria no transcript, com espaço entre elas
-      $.ui.log(
-        [
-          'STANCKE-OS v1.985 (C) 1985  ·  64K RAM SYSTEM  ·  38911 BASIC BYTES FREE',
-          'LOAD "CLAUDE CODE",8,1  ...  READY.',
-          `> ${ola}`,
-        ].join('\n'),
-      )
+      // $.ui.log aceita uma linha só (quebra vira �): uma chamada por frase
+      $.ui.log('STANCKE-OS v1.985 (C) 1985  ·  64K RAM SYSTEM  ·  38911 BASIC BYTES FREE')
+      $.ui.log('LOAD "CLAUDE CODE",8,1  ...  READY.')
+      $.ui.log(`> ${ola}`)
     }
     return next(e)
   })
